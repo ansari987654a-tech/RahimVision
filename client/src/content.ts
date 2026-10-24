@@ -4,13 +4,25 @@ export type SocialLink = {
   href: string;
 };
 
+export type Certificate = {
+  title: string;
+  organization: string;
+  date: string;
+  image: string;
+  href: string;
+};
+
+export type ToolGroup = {
+  name: string;
+  tools: string[];
+};
+
 export const creator = {
   name: "Mohd Rahim Ansari",
   shortName: "MOHD RAHIM ANSARI",
-  role: "YouTube creator · editor · storyteller",
+  role: "YouTube content creator",
   introduction:
-    "Ideas deserve more than a scroll-past. Shape this space around the videos you make, the stories you tell, and the way you see the world.",
-  profileImage: "/manus-storage/IMG_20261021_102629_3b36bb96.webp",
+    "I’m Mohd Rahim Ansari, a YouTube content creator sharing videos, Shorts, and ideas through RahimVision.",
   channel: {
     name: "RahimVision",
     handle: "@OfficialRahimVision",
@@ -18,12 +30,11 @@ export const creator = {
     channelId: "UCbh4k_Xj_OS_pWG0NXsCYRA",
     uploadsPlaylistId: "UUbh4k_Xj_OS_pWG0NXsCYRA",
     avatarUrl: "https://yt3.googleusercontent.com/6qgSBLEPecYEJqO8IZbnx4Z_J0NVKvAlkKaNh8RVJc04BepGKZgcrJtG6kMVhRZa3LAcEOvz=s900-c-k-c0x00ffffff-no-rj",
-    niche: "Add your content niche",
-    experience: "Add your years of experience",
+    niche: "Niche not provided",
+    experience: "Experience details not provided",
     about:
-      "Share your YouTube journey, your interests, what you have learned as a content creator, and the kind of stories you want to tell.",
+      "This portfolio brings together my YouTube channel and its uploads. Personal interests and additional experience details can be added when supplied.",
   },
-  email: "your@email.com",
   emailHref: "",
   socialLinks: [
     { label: "YouTube", icon: "youtube", href: "https://www.youtube.com/@OfficialRahimVision" },
@@ -36,17 +47,17 @@ export const experienceHighlights = [
   {
     number: "01",
     title: "Video editing",
-    detail: "Add the editing strengths, formats, or project experience you want to highlight.",
+    detail: "Add verified editing strengths, formats, or project experience here.",
   },
   {
     number: "02",
     title: "Animation",
-    detail: "Describe the kind of motion, animation, or visual effects you have worked with.",
+    detail: "Add the animation or visual-effects experience you want to highlight.",
   },
   {
     number: "03",
     title: "YouTube Shorts",
-    detail: "Show how you turn a strong opening idea into a concise short-form story.",
+    detail: "Add the short-form work and creation experience you want to feature.",
   },
 ];
 
@@ -60,38 +71,23 @@ export const skills = [
   "YouTube SEO",
 ];
 
-export const certificates = [
-  {
-    title: "Certificate name",
-    organization: "Issuing organization",
-    date: "Month YYYY",
-    image: "",
-    href: "",
-  },
-  {
-    title: "Add another achievement",
-    organization: "Issuing organization",
-    date: "Month YYYY",
-    image: "",
-    href: "",
-  },
-];
+export const certificates: Certificate[] = [];
 
 export const channelStats = [
-  { label: "Subscribers", value: "Add actual count", note: "Your YouTube audience" },
-  { label: "Total views", value: "Add actual count", note: "Across your channel" },
-  { label: "Videos", value: "Add actual count", note: "Published on YouTube" },
+  { label: "Subscribers", value: "15", note: "As of 24 Oct 2026" },
+  { label: "Total views", value: "572", note: "As of 24 Oct 2026" },
+  { label: "Videos", value: "8", note: "As of 24 Oct 2026" },
 ];
 
 export const bestPerformingVideo = {
-  title: "Add your best-performing video",
-  views: "Add actual view count",
-  href: "",
+  title: "Magic Pencil se homework karna pada mehenga! 😱✏️ #Chintu #MoralStory #Shorts",
+  views: "359 views · verified 24 Oct 2026",
+  href: "https://www.youtube.com/shorts/_xJyaLoAFT0",
 };
 
-export const toolGroups = [
-  { name: "Editing", tools: ["Add your editing software"] },
-  { name: "Animation", tools: ["Add your animation software"] },
-  { name: "Thumbnails", tools: ["Add your thumbnail tools"] },
-  { name: "Creating", tools: ["Add your creator workflow tools"] },
+export const toolGroups: ToolGroup[] = [
+  { name: "Editing", tools: [] },
+  { name: "Animation", tools: [] },
+  { name: "Thumbnails", tools: [] },
+  { name: "Creating", tools: [] },
 ];
