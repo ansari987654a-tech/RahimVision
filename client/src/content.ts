@@ -7,15 +7,15 @@ export type SocialLink = {
 };
 
 export const creator = {
-  name: "Your Name",
-  shortName: "YOUR NAME",
+  name: "Mohd Rahim Ansari",
+  shortName: "MOHD RAHIM ANSARI",
   role: "YouTube creator · editor · storyteller",
   introduction:
     "Ideas deserve more than a scroll-past. Shape this space around the videos you make, the stories you tell, and the way you see the world.",
   profileImage: "/manus-storage/IMG_20261021_102629_3b36bb96.webp",
   channel: {
-    name: "Your YouTube channel",
-    url: "",
+    name: "@OfficialRahimVision",
+    url: "https://www.youtube.com/@OfficialRahimVision",
     niche: "Add your content niche",
     experience: "Add your years of experience",
     about:
@@ -24,7 +24,7 @@ export const creator = {
   email: "your@email.com",
   emailHref: "",
   socialLinks: [
-    { label: "YouTube", icon: "youtube", href: "" },
+    { label: "YouTube", icon: "youtube", href: "https://www.youtube.com/@OfficialRahimVision" },
     { label: "Instagram", icon: "instagram", href: "" },
     { label: "LinkedIn", icon: "linkedin", href: "" },
   ] satisfies SocialLink[],

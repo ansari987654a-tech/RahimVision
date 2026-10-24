@@ -5,13 +5,13 @@
 - [ ] About Me: A brief introduction about yourself, your YouTube journey, your interests, and your experience as a content creator.
 - [ ] YouTube Experience: Your channel name, channel link, content niche, years of experience, video editing skills, animation experience, and Shorts creation.
 
-These sections and their editable fields are present. The name, actual portrait, channel details, journey, interests, and first-person experience still need to be supplied.
+The supplied name, portrait, and YouTube URL are now populated. Your personal introduction, channel niche and years, YouTube journey, interests, and specific editing/animation/Shorts experience still need your details.
 
 ## 2. Work portfolio and creator skills
 - [ ] My Work / Portfolio: Your best YouTube videos, Shorts, thumbnails, animations, and story projects, with links to watch them.
 - [x] Skills: Video Editing, Animation, Storytelling, Script Writing, Thumbnail Design, Voiceover, and YouTube SEO.
 
-The gallery includes all requested categories and filters, but the actual work samples and their URLs have not been provided.
+The gallery includes all requested categories and filters, plus editable media and watch-link fields. Your actual work samples and URLs have not been provided.
 
 ## 3. Certificates, achievements, and real channel statistics
 - [ ] Certificates & Achievements: Display your certificates with their images, certificate names, issuing organizations, and dates. Add a button to view each certificate.
@@ -24,4 +24,4 @@ Certificate image slots and editable statistic fields are present; real certific
 - [ ] Contact Me: Email address, YouTube channel link, and professional social media links.
 - [ ] Footer: Your name or brand logo, copyright notice, and social media links.
 
-The page includes tool categories, contact actions, and footer branding/social fields. Your actual software, email, brand name, and social profile links have not been provided.
+The supplied name and YouTube link now appear in the site and channel actions. Your actual software, email address, and other professional social profiles have not been provided.
