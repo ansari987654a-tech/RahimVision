@@ -31,8 +31,6 @@ import {
   experienceHighlights,
   skills,
   toolGroups,
-  type WorkCategory,
-  workItems,
 } from "../content";
 
 const heroArtwork = "/manus-storage/async-images/QyZAmEh1HfVgaVzmJeNqH7/image-1.webp";
@@ -44,14 +42,6 @@ const navigation = [
   ["Certificates", "certificates"],
   ["Contact", "contact"],
 ] as const;
-const filters: ("Everything" | WorkCategory)[] = [
-  "Everything",
-  "Video",
-  "Shorts",
-  "Thumbnails",
-  "Animation",
-  "Stories",
-];
 
 function SocialIcon({ icon }: { icon: "youtube" | "instagram" | "linkedin" }) {
   if (icon === "youtube") return <Youtube size={17} strokeWidth={1.8} />;
@@ -83,9 +73,7 @@ function PhotoPlaceholder() {
 }
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState<(typeof filters)[number]>("Everything");
   const [menuOpen, setMenuOpen] = useState(false);
-  const filteredWork = workItems.filter((item) => activeFilter === "Everything" || item.category === activeFilter);
 
   return (
     <main>
@@ -205,14 +193,14 @@ export default function Home() {
       </section>
 
       <section className="section work-section" id="work">
-        <div className="work-topline"><SectionLabel number="03">SELECTED WORK</SectionLabel><span className="work-topnote">A FEW FRAMES FROM THE BIG PICTURE</span></div>
-        <div className="work-heading"><h2>Make room for<br /><em>the good stuff.</em></h2><p>Videos, shorts, visuals, and stories that show how you think.<br /><span>New public uploads from RahimVision appear here automatically.</span></p></div>
+        <div className="work-topline"><SectionLabel number="03">LATEST WORK</SectionLabel><span className="work-topnote">UPLOADS FROM RAHIMVISION</span></div>
+        <div className="work-heading"><h2>Latest from<br /><em>the channel.</em></h2><p>Watch the newest public uploads without leaving the portfolio.<br /><span>New videos appear through the linked channel playlist.</span></p></div>
         <div className="latest-uploads">
           <div className="latest-uploads-copy">
             <span className="latest-uploads-kicker">FROM THE CHANNEL · AUTO-UPDATING</span>
             <h3>Latest uploads</h3>
-            <p>New public videos and Shorts from {creator.channel.name} show up here automatically after they are uploaded.</p>
-            <a className="latest-uploads-link" href={creator.channel.url} target="_blank" rel="noreferrer">Browse the channel <ArrowUpRight size={15} /></a>
+            <p>This channel playlist updates when new public videos and Shorts are posted.</p>
+            <a className="latest-uploads-link" href={creator.channel.url} target="_blank" rel="noreferrer">Visit the channel <ArrowUpRight size={15} /></a>
           </div>
           <div className="latest-uploads-player">
             <iframe
@@ -225,29 +213,6 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="filter-row" role="group" aria-label="Filter portfolio work">
-          {filters.map((filter) => <button className={`filter-pill${activeFilter === filter ? " is-active" : ""}`} type="button" key={filter} aria-pressed={activeFilter === filter} onClick={() => setActiveFilter(filter)}>{filter}</button>)}
-        </div>
-        <div className="work-grid" aria-live="polite">
-          {filteredWork.map((item, index) => <article className={`work-card ${item.visual}`} key={item.category}>
-            <div className="work-visual">
-              <div className="visual-grain" />
-              <span className="visual-index">0{index + 1}</span>
-              {item.image ? <img className="work-media" src={item.image} alt={`${item.category}: ${item.title}`} /> : <>
-              {item.category === "Video" && <div className="video-slate"><span>CHAPTER ONE</span><strong>THE<br />IDEA</strong><small>YOUR VIDEO THUMBNAIL</small></div>}
-              {item.category === "Shorts" && <div className="short-phone"><div className="phone-speaker" /><span className="short-reel-label">SHORT<br /><em>FORM</em></span><span className="short-caption">YOUR NEXT GOOD HOOK</span><Play className="short-play" size={19} fill="currentColor" /></div>}
-              {item.category === "Thumbnails" && <div className="thumb-art"><span>THE<br />BIG<br /><em>IDEA</em></span><i>YOUR<br />THUMBNAIL</i></div>}
-              {item.category === "Animation" && <div className="motion-art"><span className="motion-ring ring-one" /><span className="motion-ring ring-two" /><span className="motion-word">MOVE<span>.</span></span><span className="motion-caption">YOUR MOTION PIECE</span></div>}
-              {item.category === "Stories" && <div className="story-paper"><span className="story-label">A STORY BEGINS</span><span className="story-lines"><i /><i /><i /></span><span className="story-pencil">✳</span><span className="story-page">01 / SCRIPT</span></div>}
-              </>}
-              <span className="work-category-tag">{item.category}</span>
-            </div>
-            <div className="work-card-copy"><div><span className="work-format">{item.format}</span><h3>{item.title}</h3><p>{item.description}</p></div>
-              {item.href ? <a className="work-visit" href={item.href} target="_blank" rel="noreferrer" aria-label={`Watch ${item.title}`}><ArrowUpRight size={19} /></a> : <span className="work-visit is-placeholder" aria-label="Add a link to view this work"><ArrowUpRight size={19} /></span>}
-            </div>
-          </article>)}
-        </div>
-        <div className="work-endnote"><span className="work-endline" /> <span>YOUR BEST WORK GOES HERE</span> <span className="work-endline" /></div>
       </section>
 
       <section className="skills-section" id="skills">

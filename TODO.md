@@ -11,7 +11,7 @@ The supplied name, portrait, and YouTube URL are now populated. Your personal in
 - [ ] My Work / Portfolio: Your best YouTube videos, Shorts, thumbnails, animations, and story projects, with links to watch them.
 - [x] Skills: Video Editing, Animation, Storytelling, Script Writing, Thumbnail Design, Voiceover, and YouTube SEO.
 
-The gallery includes all requested categories and filters, plus editable media and watch-link fields. Your actual work samples and URLs have not been provided.
+The static sample cards and category filters have been removed. The section now shows the live channel uploads; thumbnails, animation/story projects, and other hand-picked samples still need to be supplied.
 
 ## 3. Certificates, achievements, and real channel statistics
 - [ ] Certificates & Achievements: Display your certificates with their images, certificate names, issuing organizations, and dates. Add a button to view each certificate.
@@ -30,3 +30,6 @@ The supplied name and YouTube link now appear in the site and channel actions. Y
 - [x] Automatically display new uploads from `https://www.youtube.com/@OfficialRahimVision` on the portfolio when they are posted; keep the channel fully linked and show its profile picture.
 
 Verified in the public Preview: the linked RahimVision profile image displays, and the embedded YouTube uploads playlist loads the channel's current video list.
+
+## 6. Remove sample portfolio cards
+- [x] Remove the placeholder category filters and sample cards from the work section; retain the automatically updating channel uploads.
