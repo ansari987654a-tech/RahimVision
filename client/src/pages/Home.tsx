@@ -30,6 +30,7 @@ import {
 } from "../content";
 
 const navigation = [
+  ["Home", "home"],
   ["About", "about"],
   ["YouTube", "experience"],
   ["Work", "work"],

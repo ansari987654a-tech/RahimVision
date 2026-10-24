@@ -5,7 +5,7 @@
 - [ ] About Me: A brief introduction about yourself, your YouTube journey, your interests, and your experience as a content creator.
 - [ ] YouTube Experience: Your channel name, channel link, content niche, years of experience, video editing skills, animation experience, and Shorts creation.
 
-The supplied name and YouTube URL are populated. The hero now uses the official RahimVision profile picture instead of the supplied personal photo. Your personal introduction, channel niche and years, YouTube journey, interests, and specific editing/animation/Shorts experience still need your details.
+The supplied name and YouTube URL are populated. The hero uses the official RahimVision profile picture instead of the supplied personal photo. Your personal introduction, channel niche and years, YouTube journey, interests, and specific editing/animation/Shorts experience still need your details.
 
 ## 2. Work portfolio and creator skills
 - [ ] My Work / Portfolio: Your best YouTube videos, Shorts, thumbnails, animations, and story projects, with links to watch them.
@@ -52,3 +52,6 @@ Verified in public Preview: the linked RahimVision profile image displays, and t
 ## 8. Verified-only channel data and contact delivery
 - [x] Use real YouTube statistics and actual certificates only; never invent achievements.
 - [x] Do not send contact form messages until a real destination email is supplied; clearly explain the setup requirement to the visitor.
+
+## 9. Clickable section navigation
+- [x] Add a visible Home tab that returns to the portfolio start; make each section tab a direct in-page anchor with smooth scrolling and close the mobile menu after selection.
