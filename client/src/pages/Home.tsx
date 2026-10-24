@@ -132,7 +132,7 @@ export default function Home() {
         </div>
         <div className="hero-art-wrap">
           <div className="hero-art-frame">
-            <img className="hero-art" src={heroArtwork} alt="An atmospheric creator's studio with a camera, storyboard and editing screen" />
+            <img className="hero-art" src={creator.profileImage || heroArtwork} alt={creator.profileImage ? `${creator.name} portrait` : "An atmospheric creator's studio with a camera, storyboard and editing screen"} />
             <div className="hero-image-topline"><span>THE CREATIVE PROCESS</span><span>01 — 10</span></div>
             <div className="hero-image-bottomline"><span>IDEA IN / STORY OUT</span><span className="record-dot" />
             </div>
