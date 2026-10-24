@@ -14,8 +14,12 @@ export const creator = {
     "Ideas deserve more than a scroll-past. Shape this space around the videos you make, the stories you tell, and the way you see the world.",
   profileImage: "/manus-storage/IMG_20261021_102629_3b36bb96.webp",
   channel: {
-    name: "@OfficialRahimVision",
+    name: "RahimVision",
+    handle: "@OfficialRahimVision",
     url: "https://www.youtube.com/@OfficialRahimVision",
+    channelId: "UCbh4k_Xj_OS_pWG0NXsCYRA",
+    uploadsPlaylistId: "UUbh4k_Xj_OS_pWG0NXsCYRA",
+    avatarUrl: "https://yt3.googleusercontent.com/6qgSBLEPecYEJqO8IZbnx4Z_J0NVKvAlkKaNh8RVJc04BepGKZgcrJtG6kMVhRZa3LAcEOvz=s900-c-k-c0x00ffffff-no-rj",
     niche: "Add your content niche",
     experience: "Add your years of experience",
     about:

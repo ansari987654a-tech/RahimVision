@@ -25,3 +25,8 @@ Certificate image slots and editable statistic fields are present; real certific
 - [ ] Footer: Your name or brand logo, copyright notice, and social media links.
 
 The supplied name and YouTube link now appear in the site and channel actions. Your actual software, email address, and other professional social profiles have not been provided.
+
+## 5. Automatic YouTube uploads and channel identity
+- [x] Automatically display new uploads from `https://www.youtube.com/@OfficialRahimVision` on the portfolio when they are posted; keep the channel fully linked and show its profile picture.
+
+Verified in the public Preview: the linked RahimVision profile image displays, and the embedded YouTube uploads playlist loads the channel's current video list.

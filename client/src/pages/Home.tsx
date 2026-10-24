@@ -179,8 +179,13 @@ export default function Home() {
             <div><h2>Built for the<br /><em>play button.</em></h2><p>Channel context, creative range, and the experience behind the work.</p></div>
           </div>
           <div className="channel-card">
-            <div className="channel-card-top"><span className="channel-avatar"><Youtube size={22} /></span><span className="channel-kicker">CHANNEL SNAPSHOT</span><span className="live-marker"><i /> YOUR CHANNEL</span></div>
-            <div className="channel-card-main"><h3>{creator.channel.name}</h3><p>{creator.channel.niche}</p></div>
+            <div className="channel-card-top">
+              <a className="channel-avatar" href={creator.channel.url} target="_blank" rel="noreferrer" aria-label={`Open ${creator.channel.name} YouTube channel`}>
+                <img src={creator.channel.avatarUrl} alt={`${creator.channel.name} profile picture`} />
+              </a>
+              <span className="channel-kicker">CHANNEL SNAPSHOT</span><span className="live-marker"><i /> YOUTUBE CHANNEL</span>
+            </div>
+            <div className="channel-card-main"><h3>{creator.channel.name}</h3><p>{creator.channel.handle} · {creator.channel.niche}</p></div>
             <div className="channel-card-foot"><span>{creator.channel.experience}</span>
               {creator.channel.url ? <a href={creator.channel.url} target="_blank" rel="noreferrer">Visit channel <ArrowUpRight size={16} /></a> : <span className="placeholder-inline">Add your channel URL <ArrowUpRight size={16} /></span>}
             </div>
@@ -201,7 +206,25 @@ export default function Home() {
 
       <section className="section work-section" id="work">
         <div className="work-topline"><SectionLabel number="03">SELECTED WORK</SectionLabel><span className="work-topnote">A FEW FRAMES FROM THE BIG PICTURE</span></div>
-        <div className="work-heading"><h2>Make room for<br /><em>the good stuff.</em></h2><p>Videos, shorts, visuals, and stories that show how you think.<br /><span>Replace these starter cards with your own work and watch links.</span></p></div>
+        <div className="work-heading"><h2>Make room for<br /><em>the good stuff.</em></h2><p>Videos, shorts, visuals, and stories that show how you think.<br /><span>New public uploads from RahimVision appear here automatically.</span></p></div>
+        <div className="latest-uploads">
+          <div className="latest-uploads-copy">
+            <span className="latest-uploads-kicker">FROM THE CHANNEL · AUTO-UPDATING</span>
+            <h3>Latest uploads</h3>
+            <p>New public videos and Shorts from {creator.channel.name} show up here automatically after they are uploaded.</p>
+            <a className="latest-uploads-link" href={creator.channel.url} target="_blank" rel="noreferrer">Browse the channel <ArrowUpRight size={15} /></a>
+          </div>
+          <div className="latest-uploads-player">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed?listType=playlist&list=${creator.channel.uploadsPlaylistId}`}
+              title={`${creator.channel.name} latest YouTube uploads`}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
         <div className="filter-row" role="group" aria-label="Filter portfolio work">
           {filters.map((filter) => <button className={`filter-pill${activeFilter === filter ? " is-active" : ""}`} type="button" key={filter} aria-pressed={activeFilter === filter} onClick={() => setActiveFilter(filter)}>{filter}</button>)}
         </div>
